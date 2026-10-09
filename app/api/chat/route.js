@@ -43,7 +43,7 @@ export async function POST(request) {
         model: process.env.MODEL_NAME || "sulai",
         messages: [{ role: "system", content: SYSTEM_PROMPT }, ...clean],
         temperature: 0.3,
-        max_tokens: 400,
+        max_tokens: 1024,
       }),
     });
 
